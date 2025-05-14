@@ -7,12 +7,15 @@ async function sha256(message) {
     return hashHex;
 }
 
+// Global variable for solved challenges
+let solvedChallenges = [];
+
 // Initialize the challenges display
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('challenges-container');
     
     // Initialize solved challenges from localStorage
-    let solvedChallenges = JSON.parse(localStorage.getItem('solvedChallenges')) || [];
+    solvedChallenges = JSON.parse(localStorage.getItem('solvedChallenges')) || [];
     
     // Sort challenges by difficulty
     const difficultyOrder = { 'easy': 1, 'medium': 2, 'hard': 3 };
