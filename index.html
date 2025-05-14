@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto CTF Challenges</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-shield-lock-fill"></i>
+                Crypto CTF
+            </a>
+            <div class="d-flex align-items-center">
+                <div class="progress-container me-3">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar"></div>
+                    </div>
+                </div>
+                <span class="progress-text"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="header-section text-center mb-5">
+            <h1>Crypto CTF Challenges</h1>
+            <p class="lead">Test your cryptography skills with these challenges</p>
+        </div>
+        
+        <div class="row" id="challenges-container">
+            <!-- Challenges will be loaded here -->
+        </div>
+    </div>
+
+    <!-- Challenge Modal -->
+    <div class="modal fade" id="challengeModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="challengeTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="challenge-description mb-4"></div>
+                    <div class="challenge-content mb-4">
+                        <h6>Challenge:</h6>
+                        <pre class="challenge-text"></pre>
+                    </div>
+                    <div class="flag-submission">
+                        <h6>Submit Flag:</h6>
+                        <div class="input-group">
+                            <input type="text" id="flagInput" class="form-control" placeholder="Enter flag here...">
+                            <button class="btn btn-primary" onclick="verifyFlag()">
+                                <i class="bi bi-check-lg"></i> Submit
+                            </button>
+                        </div>
+                        <div id="alertMessage" class="alert mt-3" style="display: none;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="challenges.js"></script>
+    <script src="app.js"></script>
+</body>
+</html> 
