@@ -24,8 +24,8 @@ const challenges = {
         title: 'RSA Challenge',
         description: 'Decrypt this RSA message. n=49476868418498080844536154073530067521391137858176235089564516966489053504443,\n e=65537',
         difficulty: 'medium',
-        challenge: '32033054674591628030728364804784409449039714975917777800447616441057320211987', // This is a placeholder, you'll need to implement actual RSA encryption
-        flagHash: 'f4adb77a80e1a0331556489aca33f574398596e996e2b15ee3226c119d214cb5' // Example hash
+        challenge: '741223382785215491086853388345488579281214697877419620477205425598778500609', // This is a placeholder, you'll need to implement actual RSA encryption
+        flagHash: '41e39362301f73696e411f9a55f9f7471feb184c8fb3ca44c07c3ba8a1e251a9' // Example hash
     },
     'caesar': {
         title: 'Caesar Cipher',
